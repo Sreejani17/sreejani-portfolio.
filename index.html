@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Sreejani, Computer Science graduate interested in AI, machine learning and software development.">
+<title>Sreejani | Developer Portfolio</title>
+<style>
+:root{--bg:#0b1020;--panel:#131b30;--text:#eef2ff;--muted:#aab5ce;--accent:#8b9cff;--line:#26324d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,Arial,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1080px,90%);margin:auto}
+header{position:sticky;top:0;background:#0b1020eF;border-bottom:1px solid var(--line);z-index:5}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}.brand{font-weight:800;letter-spacing:.4px}.links{display:flex;gap:22px;color:var(--muted);font-size:14px}.links a:hover,.textlink:hover{color:var(--accent)}
+.hero{padding:100px 0 75px;display:grid;grid-template-columns:1.5fr 1fr;gap:45px;align-items:center}
+.eyebrow{color:var(--accent);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:12px}
+h1{font-size:clamp(42px,7vw,70px);line-height:1.08;margin:14px 0}h2{font-size:30px;margin:0 0 22px}h3{margin:0 0 8px}
+.lead{font-size:19px;color:var(--muted);max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:11px 18px;border-radius:10px;background:var(--accent);color:#0b1020;font-weight:750}.btn.secondary{background:transparent;color:var(--text);border:1px solid var(--line)}
+.hero-card,.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px}
+.hero-card .big{font-size:42px;font-weight:800;color:var(--accent)}.hero-card p,.muted{color:var(--muted)}
+section{padding:55px 0;border-top:1px solid var(--line)}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.tags{display:flex;gap:9px;flex-wrap:wrap}.tag{padding:7px 11px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:14px}
+.card p{color:var(--muted);margin-bottom:12px}.textlink{color:var(--accent);font-weight:700}
+footer{padding:30px 0;color:var(--muted);text-align:center;border-top:1px solid var(--line)}
+@media(max-width:700px){.hero{grid-template-columns:1fr;padding:65px 0 45px}.grid{grid-template-columns:1fr}.links{gap:12px;font-size:12px}.links a:nth-child(2){display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav><a class="brand" href="#">SREEJANI.</a><div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav></div></header>
+<main class="wrap">
+<section class="hero" style="border:0">
+<div>
+<div class="eyebrow">Computer Science Graduate · 2026</div>
+<h1>Hi, I'm <span style="color:var(--accent)">Sreejani.</span></h1>
+<p class="lead">Aspiring software developer interested in Artificial Intelligence, Machine Learning and building practical technology solutions.</p>
+<div class="actions">
+<a class="btn" href="mailto:sreejaniminni@gmail.com">Contact Me</a>
+<a class="btn secondary" href="https://github.com/Sreejani17" target="_blank" rel="noreferrer">GitHub Profile</a>
+<a class="btn secondary" href="https://www.linkedin.com/in/sreejani-sree-/" target="_blank" rel="noreferrer">LinkedIn</a>
+</div>
+</div>
+<div class="hero-card"><div class="big">AI &amp; ML</div><h3>Developer Profile</h3><p>B.Tech in Computer Science and Engineering (AI &amp; ML)</p><p>Swami Vivekananda Institute of Technology · 2022–2026</p><p>CGPA: 7.22 / 10</p></div>
+</section>
+<section id="about"><div class="eyebrow">A little about me</div><h2>About Me</h2><p class="lead">I am a 2026 B.Tech graduate in Computer Science and Engineering (AI &amp; ML). I enjoy learning new technologies and applying programming, data analysis and machine learning concepts to solve real-world problems. I am currently looking for opportunities to grow as a software and AI/ML professional.</p></section>
+<section id="skills"><div class="eyebrow">What I work with</div><h2>Skills</h2><div class="tags">
+<span class="tag">Python</span><span class="tag">SQL</span><span class="tag">C</span><span class="tag">Java</span><span class="tag">Machine Learning</span><span class="tag">NLP</span><span class="tag">Computer Vision</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Scikit-learn</span><span class="tag">FastAPI</span><span class="tag">Streamlit</span><span class="tag">Git &amp; GitHub</span><span class="tag">Generative AI</span>
+</div></section>
+<section id="projects"><div class="eyebrow">Selected work</div><h2>Projects</h2><div class="grid">
+<article class="card"><h3>Smart City Complaint Management</h3><p>AI-enabled complaint management concept using a backend API and database to organize citizen complaints and support government response workflows.</p><span class="muted">Python · FastAPI · PostgreSQL · RAG</span></article>
+<article class="card"><h3>Claim Outcome Prediction</h3><p>Machine learning project that predicts insurance claim outcomes using a Random Forest model, with a FastAPI prediction endpoint.</p><span class="muted">Python · Pandas · Scikit-learn · FastAPI</span><p><a class="textlink" href="https://github.com/Sreejani17/claim-outcome-prediction" target="_blank" rel="noreferrer">View on GitHub ↗</a></p></article>
+<article class="card"><h3>Student Performance Prediction</h3><p>Data-driven application to explore student performance prediction through a machine learning workflow and Streamlit interface.</p><span class="muted">Python · Machine Learning · Streamlit</span></article>
+<article class="card"><h3>AI Study Assistant</h3><p>Study-support application exploring generative AI to help users with learning and study-related questions.</p><span class="muted">Python · Generative AI</span><p><a class="textlink" href="https://github.com/Sreejani17/ai-study-assistant" target="_blank" rel="noreferrer">View on GitHub ↗</a></p></article>
+<article class="card"><h3>Customer Churn Prediction</h3><p>Compared classification approaches to identify customers at risk of churn using data preprocessing and model evaluation.</p><span class="muted">Python · Pandas · Scikit-learn</span></article>
+<article class="card"><h3>CodeCrafts – E-learning Website</h3><p>Educational website project focused on presenting online learning content through a simple web experience.</p><span class="muted">Web Development</span></article>
+</div></section>
+<section id="contact"><div class="eyebrow">Let's connect</div><h2>Contact</h2><p class="lead">I'm open to entry-level opportunities, internships and collaborations in software development and AI/ML.</p><p><a class="textlink" href="mailto:sreejaniminni@gmail.com">sreejaniminni@gmail.com</a></p><p><a class="textlink" href="https://github.com/Sreejani17" target="_blank" rel="noreferrer">github.com/Sreejani17</a></p><p><a class="textlink" href="https://www.linkedin.com/in/sreejani-sree-/" target="_blank" rel="noreferrer">linkedin.com/in/sreejani-sree-</a></p></section>
+</main>
+<footer>© 2026 Sreejani · Built with HTML &amp; CSS</footer>
+</body></html>
