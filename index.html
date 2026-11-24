@@ -3,57 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Portfolio of Sreejani, Computer Science graduate interested in AI, machine learning and software development.">
-<title>Sreejani | Developer Portfolio</title>
+<meta name="description" content="Portfolio of Sreejani, B.Tech Computer Science graduate specializing in AI & Machine Learning.">
+<title>Sreejani | Software Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0b1020;--panel:#131b30;--text:#eef2ff;--muted:#aab5ce;--accent:#8b9cff;--line:#26324d}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,Arial,sans-serif}
-a{color:inherit;text-decoration:none}.wrap{width:min(1080px,90%);margin:auto}
-header{position:sticky;top:0;background:#0b1020eF;border-bottom:1px solid var(--line);z-index:5}
-nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}.brand{font-weight:800;letter-spacing:.4px}.links{display:flex;gap:22px;color:var(--muted);font-size:14px}.links a:hover,.textlink:hover{color:var(--accent)}
-.hero{padding:100px 0 75px;display:grid;grid-template-columns:1.5fr 1fr;gap:45px;align-items:center}
-.eyebrow{color:var(--accent);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:12px}
-h1{font-size:clamp(42px,7vw,70px);line-height:1.08;margin:14px 0}h2{font-size:30px;margin:0 0 22px}h3{margin:0 0 8px}
-.lead{font-size:19px;color:var(--muted);max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.btn{display:inline-block;padding:11px 18px;border-radius:10px;background:var(--accent);color:#0b1020;font-weight:750}.btn.secondary{background:transparent;color:var(--text);border:1px solid var(--line)}
-.hero-card,.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px}
-.hero-card .big{font-size:42px;font-weight:800;color:var(--accent)}.hero-card p,.muted{color:var(--muted)}
-section{padding:55px 0;border-top:1px solid var(--line)}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.tags{display:flex;gap:9px;flex-wrap:wrap}.tag{padding:7px 11px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:14px}
-.card p{color:var(--muted);margin-bottom:12px}.textlink{color:var(--accent);font-weight:700}
-footer{padding:30px 0;color:var(--muted);text-align:center;border-top:1px solid var(--line)}
-@media(max-width:700px){.hero{grid-template-columns:1fr;padding:65px 0 45px}.grid{grid-template-columns:1fr}.links{gap:12px;font-size:12px}.links a:nth-child(2){display:none}}
+:root{--bg:#090d18;--panel:#111827;--panel2:#151e30;--text:#f4f6fb;--muted:#a7b1c4;--line:rgba(190,205,235,.13);--a:#9b8cff;--b:#58d6c5;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(108,91,220,.18),transparent 34%),radial-gradient(ellipse at 0% 45%,rgba(48,177,165,.09),transparent 30%),var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font:700 1.25rem "Space Grotesk";letter-spacing:-.6px}.brand span{color:var(--b)}.navlinks{display:flex;gap:27px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:white}
+.hero{min-height:650px;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:55px;padding:76px 0 82px}.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid var(--line);border-radius:30px;color:#c9c3ff;background:rgba(155,140,255,.08);font-size:.82rem}.dot{width:7px;height:7px;background:var(--b);border-radius:50%;box-shadow:0 0 13px var(--b)}h1,h2,h3{font-family:"Space Grotesk";line-height:1.13;letter-spacing:-1.2px}h1{font-size:clamp(3rem,6vw,5.1rem);margin:24px 0 18px}h1 .gradient{background:linear-gradient(100deg,#b7aaff,#66dfd0);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:1.12rem;color:var(--muted);max-width:590px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{padding:12px 19px;border-radius:12px;font-weight:700;font-size:.92rem;border:1px solid var(--line);transition:.2s}.btn.primary{background:linear-gradient(110deg,#8d7cff,#55cfc2);color:#09111b;border:0}.btn:hover{transform:translateY(-3px)}.quick{display:flex;gap:23px;flex-wrap:wrap;margin-top:34px;color:var(--muted);font-size:.88rem}.quick strong{color:var(--text);display:block;font:600 1.2rem "Space Grotesk"}
+.photo-wrap{position:relative;max-width:410px;margin:auto}.photo-wrap:before{content:"";position:absolute;inset:-15px 18px 18px -15px;border:1px solid rgba(155,140,255,.55);border-radius:28px;transform:rotate(-5deg)}.photo-card{position:relative;padding:10px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.12),rgba(255,255,255,.025));border-radius:25px;box-shadow:0 30px 90px rgba(0,0,0,.38)}.photo-card img{display:block;width:100%;height:510px;object-fit:cover;object-position:center 38%;border-radius:17px}.photo-tag{position:absolute;bottom:25px;left:-26px;background:#172236;border:1px solid var(--line);padding:13px 17px;border-radius:14px;box-shadow:0 12px 35px #0007;font-size:.85rem}.photo-tag b{display:block;color:var(--b);font-size:.95rem}
+section{padding:76px 0;border-top:1px solid var(--line)}.section-head{margin-bottom:30px}.kicker{color:var(--b);text-transform:uppercase;letter-spacing:2px;font-size:.75rem;font-weight:700}.section-head h2{font-size:clamp(2rem,4vw,3rem);margin:9px 0}.section-head p{color:var(--muted);max-width:650px;margin:0}.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}.panel{background:linear-gradient(145deg,rgba(21,30,48,.94),rgba(15,23,38,.92));border:1px solid var(--line);border-radius:20px;padding:27px}.panel p{color:var(--muted);margin:0}.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fact{padding:17px;background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:14px}.fact small{display:block;color:var(--muted);font-size:.76rem}.fact b{font-size:.95rem}
+.skills{display:flex;flex-wrap:wrap;gap:11px}.skill{padding:10px 15px;border:1px solid var(--line);border-radius:30px;background:rgba(255,255,255,.035);color:#dce4f4;font-size:.9rem}.skill:hover{border-color:var(--a);background:rgba(155,140,255,.1)}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.project{padding:24px;border:1px solid var(--line);border-radius:19px;background:linear-gradient(145deg,rgba(21,30,48,.95),rgba(13,20,33,.95));transition:.22s}.project:hover{transform:translateY(-5px);border-color:rgba(155,140,255,.55)}.project-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:17px}.project-icon{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:rgba(155,140,255,.13);font-size:1.25rem}.project h3{font-size:1.22rem;margin:0 0 9px;letter-spacing:-.4px}.project p{color:var(--muted);font-size:.92rem;margin:0 0 18px}.tags{display:flex;flex-wrap:wrap;gap:7px}.tags span{font-size:.73rem;color:#b9c6da;background:rgba(255,255,255,.06);padding:5px 9px;border-radius:20px}.project a{display:inline-block;margin-top:18px;color:var(--b);font-size:.88rem;font-weight:700}
+.timeline{display:grid;grid-template-columns:1fr 1fr;gap:16px}.timeline .panel h3{font-size:1.08rem;letter-spacing:-.3px;margin:0 0 7px}.timeline .panel small{color:var(--b)}
+.contact{display:flex;justify-content:space-between;align-items:center;gap:30px}.contact h2{font-size:clamp(2rem,4vw,3rem);margin:8px 0}.contact p{color:var(--muted);margin:0}.contact-links{display:flex;gap:10px;flex-wrap:wrap}
+footer{padding:25px 0;color:#7f8ba1;font-size:.82rem;border-top:1px solid var(--line);text-align:center}
+@media(max-width:800px){.hero{grid-template-columns:1fr;gap:45px;padding-top:58px}.hero-copy{text-align:center}.lead{margin-inline:auto}.actions,.quick{justify-content:center}.photo-wrap{width:min(88%,390px)}.photo-card img{height:450px}.about-grid,.timeline{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}}
+@media(max-width:580px){.wrap{width:min(var(--max),calc(100% - 28px))}nav{height:auto;padding:19px 0;align-items:flex-start;gap:15px;flex-direction:column}.navlinks{gap:15px;flex-wrap:wrap;font-size:.82rem}.hero{min-height:auto;padding:58px 0 65px}h1{font-size:3.15rem}.photo-card img{height:410px}.photo-tag{left:-12px}.projects{grid-template-columns:1fr}section{padding:60px 0}.panel{padding:21px}}
 </style>
 </head>
 <body>
-<header><div class="wrap"><nav><a class="brand" href="#">SREEJANI.</a><div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav></div></header>
-<main class="wrap">
-<section class="hero" style="border:0">
-<div>
-<div class="eyebrow">Computer Science Graduate · 2026</div>
-<h1>Hi, I'm <span style="color:var(--accent)">Sreejani.</span></h1>
-<p class="lead">Aspiring software developer interested in Artificial Intelligence, Machine Learning and building practical technology solutions.</p>
-<div class="actions">
-<a class="btn" href="mailto:sreejaniminni@gmail.com">Contact Me</a>
-<a class="btn secondary" href="https://github.com/Sreejani17" target="_blank" rel="noreferrer">GitHub Profile</a>
-<a class="btn secondary" href="https://www.linkedin.com/in/sreejani-sree-/" target="_blank" rel="noreferrer">LinkedIn</a>
+<div class="wrap">
+<nav><a class="brand" href="#">sreejani<span>.</span></a><div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Education</a><a href="#contact">Contact</a></div></nav>
+<main>
+<div class="hero">
+<div class="hero-copy">
+<div class="eyebrow"><span class="dot"></span> Open to internship opportunities</div>
+<h1>Hi, I'm<br><span class="gradient">Sreejani.</span></h1>
+<p class="lead">Computer Science graduate passionate about building useful software and exploring the possibilities of AI &amp; Machine Learning. I enjoy learning by building and turning ideas into practical projects.</p>
+<div class="actions"><a class="btn primary" href="#projects">Explore my work ↗</a><a class="btn" href="mailto:sreejaniminni@gmail.com">Let's connect</a></div>
+<div class="quick"><div><strong>2026</strong>Graduate</div><div><strong>AI &amp; ML</strong>Specialization</div><div><strong>Hyderabad</strong>India</div></div>
 </div>
+<div class="photo-wrap"><div class="photo-card"><img src="assets/profile.jpg" alt="Sreejani profile photo"></div><div class="photo-tag">Building, learning &amp; growing<b>One project at a time ✦</b></div></div>
 </div>
-<div class="hero-card"><div class="big">AI &amp; ML</div><h3>Developer Profile</h3><p>B.Tech in Computer Science and Engineering (AI &amp; ML)</p><p>Swami Vivekananda Institute of Technology · 2022–2026</p><p>CGPA: 7.22 / 10</p></div>
-</section>
-<section id="about"><div class="eyebrow">A little about me</div><h2>About Me</h2><p class="lead">I am a 2026 B.Tech graduate in Computer Science and Engineering (AI &amp; ML). I enjoy learning new technologies and applying programming, data analysis and machine learning concepts to solve real-world problems. I am currently looking for opportunities to grow as a software and AI/ML professional.</p></section>
-<section id="skills"><div class="eyebrow">What I work with</div><h2>Skills</h2><div class="tags">
-<span class="tag">Python</span><span class="tag">SQL</span><span class="tag">C</span><span class="tag">Java</span><span class="tag">Machine Learning</span><span class="tag">NLP</span><span class="tag">Computer Vision</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Scikit-learn</span><span class="tag">FastAPI</span><span class="tag">Streamlit</span><span class="tag">Git &amp; GitHub</span><span class="tag">Generative AI</span>
+
+<section id="about"><div class="section-head"><span class="kicker">A little about me</span><h2>Curious mind. Practical builder.</h2><p>I’m a B.Tech Computer Science graduate specializing in Artificial Intelligence and Machine Learning. I’m interested in software development, data-driven problem solving and creating simple experiences that are genuinely useful.</p></div>
+<div class="about-grid"><div class="panel"><p>My learning journey has included Python development, machine learning workflows, APIs and web-based projects. I like understanding how things work, testing ideas and improving through hands-on practice. I’m currently looking for an opportunity where I can contribute, learn from a team and grow as a software developer.</p></div><div class="facts"><div class="fact"><small>Degree</small><b>B.Tech – CSE (AI &amp; ML)</b></div><div class="fact"><small>Graduation</small><b>2026</b></div><div class="fact"><small>University</small><b>Swami Vivekananda Institute of Technology</b></div><div class="fact"><small>CGPA</small><b>7.22 / 10</b></div></div></div></section>
+
+<section id="skills"><div class="section-head"><span class="kicker">What I work with</span><h2>Skills &amp; technologies</h2><p>Tools and concepts I have used across coursework, practice and projects.</p></div>
+<div class="skills"><span class="skill">Python</span><span class="skill">SQL</span><span class="skill">C</span><span class="skill">Java</span><span class="skill">Machine Learning</span><span class="skill">NLP</span><span class="skill">Computer Vision</span><span class="skill">Pandas</span><span class="skill">NumPy</span><span class="skill">Scikit-learn</span><span class="skill">FastAPI</span><span class="skill">Streamlit</span><span class="skill">Generative AI</span><span class="skill">RAG</span><span class="skill">Git &amp; GitHub</span></div></section>
+
+<section id="projects"><div class="section-head"><span class="kicker">Selected work</span><h2>Projects I've explored.</h2><p>A selection of academic and hands-on projects. Open the linked repositories to explore the code where available.</p></div>
+<div class="projects">
+<article class="project"><div class="project-top"><div class="project-icon">🏙️</div><span class="kicker">01 / AI + Backend</span></div><h3>Smart City Complaint Management</h3><p>A complaint-management and predictive analytics project designed to help organize citizen reports and support government-side workflows.</p><div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>RAG</span></div></article>
+<article class="project"><div class="project-top"><div class="project-icon">📊</div><span class="kicker">02 / Machine Learning</span></div><h3>Claim Outcome Prediction</h3><p>A machine-learning project that predicts claim outcomes, with a trained model served through a simple API.</p><div class="tags"><span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>FastAPI</span></div><a href="https://github.com/Sreejani17/claim-outcome-prediction" target="_blank" rel="noreferrer">View on GitHub ↗</a></article>
+<article class="project"><div class="project-top"><div class="project-icon">🎓</div><span class="kicker">03 / Data + ML</span></div><h3>Student Performance Prediction</h3><p>A Streamlit-based project exploring student performance prediction through a machine-learning workflow.</p><div class="tags"><span>Python</span><span>Machine Learning</span><span>Streamlit</span></div></article>
+<article class="project"><div class="project-top"><div class="project-icon">🤖</div><span class="kicker">04 / Generative AI</span></div><h3>AI Study Assistant</h3><p>A study-assistant project exploring how generative AI can help learners with study-related tasks.</p><div class="tags"><span>Python</span><span>Generative AI</span></div><a href="https://github.com/Sreejani17/ai-study-assistant" target="_blank" rel="noreferrer">View on GitHub ↗</a></article>
+<article class="project"><div class="project-top"><div class="project-icon">📈</div><span class="kicker">05 / Data Science</span></div><h3>Customer Churn Prediction</h3><p>A classification project comparing machine-learning approaches to identify customers likely to leave a service.</p><div class="tags"><span>Python</span><span>Scikit-learn</span><span>Data Analysis</span></div></article>
+<article class="project"><div class="project-top"><div class="project-icon">💻</div><span class="kicker">06 / Web project</span></div><h3>CodeCrafts E-learning Website</h3><p>An educational website project focused on presenting learning content through a web interface.</p><div class="tags"><span>Web Development</span><span>Education</span></div></article>
 </div></section>
-<section id="projects"><div class="eyebrow">Selected work</div><h2>Projects</h2><div class="grid">
-<article class="card"><h3>Smart City Complaint Management</h3><p>AI-enabled complaint management concept using a backend API and database to organize citizen complaints and support government response workflows.</p><span class="muted">Python · FastAPI · PostgreSQL · RAG</span></article>
-<article class="card"><h3>Claim Outcome Prediction</h3><p>Machine learning project that predicts insurance claim outcomes using a Random Forest model, with a FastAPI prediction endpoint.</p><span class="muted">Python · Pandas · Scikit-learn · FastAPI</span><p><a class="textlink" href="https://github.com/Sreejani17/claim-outcome-prediction" target="_blank" rel="noreferrer">View on GitHub ↗</a></p></article>
-<article class="card"><h3>Student Performance Prediction</h3><p>Data-driven application to explore student performance prediction through a machine learning workflow and Streamlit interface.</p><span class="muted">Python · Machine Learning · Streamlit</span></article>
-<article class="card"><h3>AI Study Assistant</h3><p>Study-support application exploring generative AI to help users with learning and study-related questions.</p><span class="muted">Python · Generative AI</span><p><a class="textlink" href="https://github.com/Sreejani17/ai-study-assistant" target="_blank" rel="noreferrer">View on GitHub ↗</a></p></article>
-<article class="card"><h3>Customer Churn Prediction</h3><p>Compared classification approaches to identify customers at risk of churn using data preprocessing and model evaluation.</p><span class="muted">Python · Pandas · Scikit-learn</span></article>
-<article class="card"><h3>CodeCrafts – E-learning Website</h3><p>Educational website project focused on presenting online learning content through a simple web experience.</p><span class="muted">Web Development</span></article>
+
+<section id="experience"><div class="section-head"><span class="kicker">Education &amp; learning</span><h2>My foundation.</h2></div><div class="timeline">
+<div class="panel"><small>2022 – 2026</small><h3>B.Tech, Computer Science &amp; Engineering (AI &amp; ML)</h3><p>Swami Vivekananda Institute of Technology · CGPA 7.22/10</p></div>
+<div class="panel"><small>Internships &amp; certifications</small><h3>Continuous learning</h3><p>AI mentorship and AI/ML + Python development internship experience. Certifications and courses include IBM SkillsBuild AI Fundamentals, edX Python for Data Science and Microsoft course completion.</p></div>
 </div></section>
-<section id="contact"><div class="eyebrow">Let's connect</div><h2>Contact</h2><p class="lead">I'm open to entry-level opportunities, internships and collaborations in software development and AI/ML.</p><p><a class="textlink" href="mailto:sreejaniminni@gmail.com">sreejaniminni@gmail.com</a></p><p><a class="textlink" href="https://github.com/Sreejani17" target="_blank" rel="noreferrer">github.com/Sreejani17</a></p><p><a class="textlink" href="https://www.linkedin.com/in/sreejani-sree-/" target="_blank" rel="noreferrer">linkedin.com/in/sreejani-sree-</a></p></section>
+
+<section id="contact"><div class="contact"><div><span class="kicker">Have an opportunity?</span><h2>Let's build something useful.</h2><p>I'm happy to connect about internships, projects and learning opportunities.</p></div><div class="contact-links"><a class="btn primary" href="mailto:sreejaniminni@gmail.com">Email me ↗</a><a class="btn" href="https://www.linkedin.com/in/sreejani-sree-/" target="_blank" rel="noreferrer">LinkedIn</a><a class="btn" href="https://github.com/Sreejani17" target="_blank" rel="noreferrer">GitHub</a></div></div></section>
 </main>
-<footer>© 2026 Sreejani · Built with HTML &amp; CSS</footer>
-</body></html>
+<footer>© 2026 Sreejani · Designed with curiosity and care.</footer>
+</div>
+</body>
+</html>
